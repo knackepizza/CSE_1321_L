@@ -44,5 +44,7 @@ public class AssignGrades {
         for (int i = 0; i < classSize; i++) {
             System.out.println("Student " + i + " score is " + grades[i] + " and grade is " + toLetterGrade(grades[i]));
         }
+
+        scnr.close();
     }
 }
