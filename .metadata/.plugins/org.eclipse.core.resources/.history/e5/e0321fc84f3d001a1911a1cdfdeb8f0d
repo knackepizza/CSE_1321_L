@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Australia {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		int hectateres, trees = 456;
+		double acres = 2.47;
+		
+		
+	}
+
+}

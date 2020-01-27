@@ -1,0 +1,59 @@
+/* Class: CSE 1321L
+ * Section: 10
+ * Term: Spring 2020
+ * Instructor: Imad Ghandour
+ * Name: Nick Nettleton
+ * Lab#: 1
+*/
+
+// Importing scanner
+import java.util.Scanner;
+public class Coins {
+
+	public static void main(String[] args) {
+		// Creating scanner object
+		Scanner scnr = new Scanner(System.in);
+		
+		// Creating all cent types, dollars, and cents total as double to keep decimal values
+		double q, d, n, p, dollars;
+		double cents;
+		
+		// Asking user for all cent types and storing in respective values
+		System.out.print("Enter number of quarters: ");
+		q = scnr.nextDouble();
+		
+		System.out.print("Enter number of dimes: ");
+		d = scnr.nextDouble();
+		
+		System.out.print("Enter number of nickels: ");
+		n = scnr.nextDouble();
+		
+		System.out.print("Enter number of pennies: ");
+		p = scnr.nextDouble();
+		
+		// Outputting cent values, but casted with int to drop the decimal point
+		System.out.println("You entered " + (int) q + " quarters");
+		System.out.println("You entered " + (int) d + " dimes");
+		System.out.println("You entered " + (int) n + " nickels");
+		System.out.println("You entered " + (int) p + " pennies");
+		
+		// Multiplying cents to their respective values
+		q = (q * 0.25);
+		d = (d * 0.10);
+		n = (n * 0.05);
+		p = (p * 0.01);
+		
+		// Dollars will be equal to the ones value (X.##)
+		dollars = Math.floor((q + d + n + p));
+		
+		// Cents is equal to cent values - dollars so its range is 0-99
+		cents = (float) (((q + d + n + p) - dollars) * 100);
+		
+		// Printing dollar and cent values casted with int to drop decimal value
+		System.out.print("Your total is " + (int) dollars + " dollars and " + (int) cents + " cents");
+		
+		// Closing the scanner object. Professor talked about it, so I guess its okay to do this now.
+		scnr.close();
+	}
+
+}

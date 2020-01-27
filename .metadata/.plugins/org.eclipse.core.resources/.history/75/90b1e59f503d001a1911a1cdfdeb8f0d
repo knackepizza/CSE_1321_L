@@ -1,0 +1,21 @@
+/* Class: CSE 1321L
+ * Section: 10
+ * Term: Spring 2020
+ * Instructor: Imad Ghandour
+ * Name: Nick Nettleton
+ * Lab#: 1
+*/
+
+import java.util.Scanner; 
+public class PythagoreanTheorem {
+
+	public static void main(String[] args) {
+		int a, b;
+		double c;
+
+		c = Math.sqrt((a * a) + (b * b));
+		System.out.println(c);
+		
+	}
+
+}

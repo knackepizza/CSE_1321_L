@@ -1,0 +1,14 @@
+INDEX VERSION 1.131+D:\School\SPRING 2020\CSE 1321 LAB\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+2143315025.index
+2883064424.index
+1259207542.index
+1364458688.index
+1248545562.index
+996610041.index
+1281376111.index
+3580456661.index
+3705611006.index
+1007340512.index
+3361385850.index
+2768476762.index
+2725142083.index

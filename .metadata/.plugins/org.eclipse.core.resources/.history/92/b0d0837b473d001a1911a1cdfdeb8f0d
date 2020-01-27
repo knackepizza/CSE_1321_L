@@ -1,0 +1,10 @@
+
+public class PythagoreanTheorem {
+
+	public static void main(String[] args) {
+		int a, b;
+		double c;
+
+	}
+
+}

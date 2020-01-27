@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Australia {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		int hectares, trees = 456;
+		double acres = 2.47;
+		
+		System.out.println("How many hectares were destroyed today? ");
+		hectares = scnr.nextInt();
+		
+		trees = ((hectares * acres) * trees);
+		System.out.println("This many trees were destroyed today: " + trees);
+	}
+
+}
