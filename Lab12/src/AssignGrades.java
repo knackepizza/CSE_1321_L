@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AssignGrades {
 
-    static char toLetterGrade(int grade) {
+    static char letterGradeOf(int grade) {
         if (grade <= 100 && grade >= 90) {
             return 'A';
         } else if (grade >= 80) {
@@ -42,7 +42,11 @@ public class AssignGrades {
             }
         }
         for (int i = 0; i < classSize; i++) {
-            System.out.println("Student " + i + " score is " + grades[i] + " and grade is " + toLetterGrade(grades[i]));
+            // Spaced out for soft-wrap
+            System.out.println("Student " + i 
+                                + " score is " + grades[i] 
+                                + " and grade is " 
+                                + letterGradeOf(grades[i]));
         }
 
         scnr.close();
