@@ -3,7 +3,7 @@
  * Term: Spring 2020
  * Instructor: Imad Ghandour
  * Name: Nick Nettleton
- * Lab#: 1
+ * Lab#: 4
 */
 
 import java.util.Scanner;
@@ -15,23 +15,30 @@ public class GradeReport {
 		
 		int grade;
 		
-		System.out.println("Enter your grade: ");
+		System.out.print("Enter your grade: ");
 		grade = scnr.nextInt();
 		
 		System.out.println("You entered " + grade);
 		
-		if (grade >= 100) {
-			System.out.println("That grade is a perfect score. Well done.");
-		} else if (grade >= 90) {
-			System.out.println("That grade is well above average. Excellent work.");
-		} else if (grade >= 80) {
-			System.out.println("That grade is above average. Nice job.");
-		} else if (grade >= 70) {
-			System.out.println("That grade is average work.");
-		} else if (grade >= 60) {
-			System.out.println("That grade is not good, you should seek help!");
-		} else {
-			System.out.println("That grade is not passing.");
+		switch (grade/10) {
+			case 10:
+				System.out.println("That grade is a perfect score. Well done.");
+				break;
+			case 9:
+				System.out.println("That grade is well above average. Excellent work.");
+				break;
+			case 8:
+				System.out.println("That grade is above average. Nice job.");
+				break;
+			case 7:
+				System.out.println("That grade is average work.");
+				break;
+			case 6:
+				System.out.println("That grade is not good, you should seek help!");
+				break;
+			default:
+				System.out.println("That grade is not passing.");
+				break;
 		}
 		
 		scnr.close();
