@@ -3,7 +3,7 @@
  * Term: Spring 2020
  * Instructor: Imad Ghandour
  * Name: Nick Nettleton
- * Lab#: 1
+ * Lab#: 3.5 (Assignment 2)
 */
 
 import java.util.Scanner;
