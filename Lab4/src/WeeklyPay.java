@@ -29,7 +29,7 @@ public class WeeklyPay {
 			overtime = 0;
 		} 
 		
-		total = ((hours * rate) + (overtime * (rate *1.5)));
+		total = ((hours * rate) + (overtime * (rate * 1.5)));
 		System.out.println("Gross earning is $" + (total));
 		
 		scnr.close();
