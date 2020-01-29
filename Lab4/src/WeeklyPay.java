@@ -13,7 +13,7 @@ public class WeeklyPay {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 
-		int hours, overtime;
+		int hours, overtime = 0;
 		double rate = 10.0, total;
 		
 		System.out.print("Enter your hours: ");
@@ -21,12 +21,10 @@ public class WeeklyPay {
 
 		System.out.println("You entered " + hours + " hours.");
 		
-		overtime = (hours - 40);
 
-		if (overtime > 0) {
-			hours = (hours - overtime);
-		} else {
-			overtime = 0;
+		if (hours > 40) {
+			overtime = (hours - 40);
+			hours -= overtime;
 		} 
 		
 		total = ((hours * rate) + (overtime * (rate * 1.5)));
