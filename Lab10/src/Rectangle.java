@@ -4,7 +4,7 @@
  * Term: Spring 2020
  * Instructor: Imad Ghandour
  * Name: Nick Nettleton
- * Lab#: 1
+ * Lab#: 10
 */
 
 public class Rectangle {
