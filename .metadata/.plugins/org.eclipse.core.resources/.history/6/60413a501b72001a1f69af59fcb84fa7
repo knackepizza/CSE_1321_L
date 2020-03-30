@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class CompareArrays {
+
+	static String compare(int size, int[] first, int[] second) {
+		int checker = 0;
+		for (int i = 0; i < size; i++) {
+			if (first[i] == second[i]) {
+				checker++;
+			}
+		}
+		if (checker == size) {
+			return "The arrays are identical";
+		} else {
+			return "The arrays are not identical";
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		int[] firstArray, secondArray;
+		int arraySize;
+		
+		System.out.print("Enter Array Size: ");
+		arraySize = scnr.nextInt();
+		
+		firstArray = new int[arraySize];
+		secondArray = new int[arraySize];
+		
+		for (int i = 0; i < arraySize; i++) {
+			System.out.print("Enter First Array's Index #" + i + ": ");
+			firstArray[i] = scnr.nextInt();
+		}
+		
+		System.out.println();
+		
+		for (int i = 0; i < arraySize; i++) {
+			System.out.print("Enter Second Array's Index #" + i + ": ");
+			secondArray[i] = scnr.nextInt();
+		}
+		
+		System.out.println();
+		
+		System.out.println("Array Size: " + arraySize);
+		System.out.print("First Array: ");
+		for (int i = 0; i < arraySize; i++) {
+			System.out.print(firstArray[i]);
+			if (i != (arraySize - 1)) {
+				System.out.print(", ");
+			}
+		}
+		System.out.print("\nSecond Array: ");
+		for (int i = 0; i < arraySize; i++) {
+			System.out.print(secondArray[i]);
+			if (i != (arraySize - 1)) {
+				System.out.print(", ");
+			}
+		}
+		
+		System.out.println("\nJudgement:    " + compare(arraySize, firstArray, secondArray));
+	}
+
+}

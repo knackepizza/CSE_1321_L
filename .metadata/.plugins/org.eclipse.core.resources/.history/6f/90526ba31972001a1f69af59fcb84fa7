@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CompareArrays {
+
+	static String compare() {
+		return "fuck";
+	}
+	
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		int[] firstArray, secondArray;
+		int arraySize;
+		
+		System.out.print("Array size: ");
+		arraySize = scnr.nextInt();
+		
+		firstArray = new int[arraySize];
+		secondArray = new int[arraySize];
+		
+		for (int i = 1; i < arraySize; i++) {
+			System.out.print("Enter First Array's Index #" + i + ": ");
+			firstArray[i-1] = scnr.nextInt();
+		}
+		for (int i = 0; i < arraySize; i++) {
+			System.out.print(firstArray[i] + ", ");
+		}
+	}
+
+}
